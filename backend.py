@@ -9,6 +9,7 @@ import html
 load_dotenv()
 
 app = Flask(__name__)
+app.config["DEBUG"] = False 
 CORS(app)  # Enable CORS for all routes
 
 # Spotify API credentials
