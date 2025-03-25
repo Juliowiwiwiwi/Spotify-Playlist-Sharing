@@ -14,7 +14,7 @@ const Playlists = () => {
   useEffect(() => {
     const fetchPlaylists = async () => {
       try {
-        const response = await fetch('http://localhost:5000/playlists');
+        const response = await fetch('https://spotify-playlist-sharing.onrender.com');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
