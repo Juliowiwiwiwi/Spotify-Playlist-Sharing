@@ -1,0 +1,10 @@
+https://juliosplaylistdump.com/callback
+
+
+Important: Do NOT Upload .env to GitHub!
+
+    If you use Git, run this command to prevent the .env file from being uploaded:
+
+echo ".env" >> .gitignore
+
+This ensures that your credentials stay private and don’t get leaked.
