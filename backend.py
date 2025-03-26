@@ -9,8 +9,14 @@ import html
 load_dotenv()
 
 app = Flask(__name__)
-app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/playlists": {
+        "origins": [
+            "https://spotify-playlist-cardtrial-devanarayan-css-projects.vercel.app/",  # Your new Vercel domain
+            "http://localhost:3000"
+        ]
+    }
+})
 
 # Spotify API credentials
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
