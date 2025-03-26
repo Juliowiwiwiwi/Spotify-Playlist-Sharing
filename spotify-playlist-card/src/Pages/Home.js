@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       <p className="description">
         All my favourite playlists<br />
-        at once place cuz ily <span className="heart">❤️</span>
+        at one place cuz ily <span className="heart">❤️</span>
       </p>
       <button 
         className="pop-button"
